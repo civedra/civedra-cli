@@ -1,0 +1,21 @@
+{
+  "name": "@civedra/cli",
+  "version": "1.0.0",
+  "description": "CIVEDRA AI model trust evaluation CLI",
+  "main": "index.js",
+  "bin": {
+    "civedra": "./index.js"
+  },
+  "scripts": {
+    "test": "node index.js check claude-3-5-sonnet"
+  },
+  "keywords": [
+    "AI", "security", "trust", "evaluation",
+    "NDAA", "DoD", "model evaluation", "LLM security"
+  ],
+  "author": "CIVEDRA",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
