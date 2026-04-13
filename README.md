@@ -18,6 +18,16 @@ npm install -g @civedra/cli
 
 Requires Node.js 14 or higher.
 
+## Configuration
+
+The CLI works out of the box with no configuration.
+
+To use a custom endpoint (for enterprise deployments):
+
+export CIVEDRA_HOST=your-endpoint.com
+export CIVEDRA_KEY=your-key
+civedra check deepseek-r1
+
 ## Usage
 
 ```bash
