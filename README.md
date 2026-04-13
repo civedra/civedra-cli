@@ -86,4 +86,3 @@ integrity, and NDAA §1532 compliance.
 ## License
 
 MIT — see LICENSE file.
-```
