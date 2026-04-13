@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const https = require('https')
-const model = process.argv[2]
+const model = process.argv[3]
 
 if (!model) {
   console.log('Usage: civedra check <model-name>')
