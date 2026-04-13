@@ -1,6 +1,6 @@
 {
   "name": "@civedra/cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CIVEDRA AI model trust evaluation CLI",
   "main": "index.js",
   "bin": {
