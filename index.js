@@ -1,4 +1,3 @@
-// index.js
 #!/usr/bin/env node
 
 const https = require('https')
