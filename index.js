@@ -11,13 +11,17 @@ if (!model) {
 
 const slug = model.toLowerCase().replace(/\s+/g, '-')
 
+const SUPABASE_HOST = 'rhlmkjdojhjetsjjvehk.supabase.co'
+const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJobG1ramRvamhqZXRzamp2ZWhrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU5NTM3MzUsImV4cCI6MjA5MTUyOTczNX0.UPJ1RRGWD5GoOKg4ulzmvCEMv-BSQrt-KzC76p31yZ4'
+
 const options = {
-  hostname: 'civedra.com',
-  path: `/api/v1/check/${encodeURIComponent(slug)}`,
+  hostname: SUPABASE_HOST,
+  path: `/functions/v1/civedra-check?model=${encodeURIComponent(slug)}`,
   method: 'GET',
   headers: {
     'User-Agent': 'civedra-cli/1.0.0',
-    'Accept': 'application/json'
+    'Accept': 'application/json',
+    'Authorization': `Bearer ${SUPABASE_ANON}`
   }
 }
 
